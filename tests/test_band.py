@@ -105,18 +105,18 @@ def test_band_members(one_band):
     assert one_band.members[2].name == "Dave Grohl"
 
 
-# def test_play_solos_for_whole_band(one_band):
-#     solos = one_band.play_solos()
-#     assert len(solos) == 3
-#     assert solos[0] == "face melting guitar solo"
-#     assert solos[1] == "bom bom buh bom"
-#     assert solos[2] == "rattle boom crash"
+def test_play_solos_for_whole_band(one_band):
+    solos = one_band.play_solos()
+    assert len(solos) == 3
+    assert solos[0] == "face melting guitar solo"
+    assert solos[1] == "bom bom buh bom"
+    assert solos[2] == "rattle boom crash"
 
 
-# def test_to_list():
-#     assert Band.to_list() == []
-#     Band("The Nobodies", [])
-#     assert len(Band.to_list()) == 1
+def test_to_list():
+    assert Band.to_list() == []
+    Band("The Nobodies", [])
+    assert len(Band.to_list()) == 1
 
 
 #######################
